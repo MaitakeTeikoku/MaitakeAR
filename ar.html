@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+  https://www.mlit.go.jp/plateau/learning/tpc14-1/
+-->
+<html>
+
+<body style="margin:0px; overflow:hidden;">
+  <!-- A-Frame ライブラリの読み込み -->
+  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  <!-- AR.js ライブラリの読み込み -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+  <!-- AR領域 -->
+  <a-scene embedded arjs>
+    <!-- カメラのエンティティ -->
+    <a-entity camera></a-entity>
+
+    <!-- マーカー定義 -->
+    <a-marker type="pattern" url="assets/pattern-logo_original.patt">
+      <!-- マーカーの位置に下記の立方体が表示される -->
+      <a-entity position="0 0 0" rotation="0 0 0" scale="0.001 0.001 0.001" gltf-model="assets/pengiun.glb"></a-entity>
+    </a-marker>
+  </a-scene>
+</body>
+
+</html>

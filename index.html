@@ -2,18 +2,36 @@
 <html>
 
 <body>
-  <button onclick="location.href='ar.html'">AR</button>
-  <ol>
-    <li>上のARボタンを押します。カメラが起動します。</li>
-    <li>下の画像を他のデバイスで表示します。</li>
-    <li>2.で表示した画像を、1.で起動したカメラで読み込みます。</li>
-    <li>3Dのオブジェクトが表示されます。</li>
-  </ol>
 
-  <!--
-      https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html
-    -->
-  <img src="img/pattern-logo_original.png" width="100%" height="100%" />
+  <table border="1">
+    <tr>
+      <th colspan="2">
+        マーカーAR
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <button onclick="location.href='ar.html'">AR</button>
+      </td>
+      <td>
+        <!--
+          https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html
+        -->
+        <img src="img/pattern-logo_original.png" width="360px" height="360px" />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <ol>
+          <li>ARボタンを押します。カメラが起動します。</li>
+          <li>画像を他のデバイスで表示します。</li>
+          <li>2.で表示した画像を、1.で起動したカメラで読み込みます。</li>
+          <li>3Dのオブジェクトが表示されます。</li>
+        </ol>
+      </td>
+    </tr>
+  </table>
+
 </body>
 
 </html>
